@@ -60,7 +60,7 @@ const Demo = () => {
               className='link_card'
             >
               <div className='copy_btn' onClick={() => handleCopy(item.url)}>
-                <img src={copied === true ? tick : copy} alt="copy_icon" className='w-[40%] h-[40%] object-contain' />
+                <img src={copied === item.url ? tick : copy} alt="copy_icon" className='w-[40%] h-[40%] object-contain' />
               </div>
               <p className='flex-1 font-satoshi text-blue-700 font-medium text-sm turncate'>{item.url}</p>
             </div>
